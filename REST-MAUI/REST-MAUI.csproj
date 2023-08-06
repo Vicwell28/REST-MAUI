@@ -50,7 +50,20 @@
 
 	<ItemGroup>
 	  <None Remove="appsettings.json" />
+	  <None Remove="Resources\Fonts\Rubik-Light.ttf" />
+	  <None Remove="Resources\Fonts\Rubik-Regular.ttf" />
 	  <None Remove="Resources\Raw\animation.json" />
+	  <None Remove="Resources\Raw\foggy.json" />
+	  <None Remove="Resources\Raw\mist.json" />
+	  <None Remove="Resources\Raw\partly-cloudy.json" />
+	  <None Remove="Resources\Raw\partly-shower.json" />
+	  <None Remove="Resources\Raw\snow-sunny.json" />
+	  <None Remove="Resources\Raw\snow.json" />
+	  <None Remove="Resources\Raw\storm.json" />
+	  <None Remove="Resources\Raw\stormshowersday.json" />
+	  <None Remove="Resources\Raw\sunny.json" />
+	  <None Remove="Resources\Raw\thunder.json" />
+	  <None Remove="Resources\Raw\windy.json" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -66,6 +79,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Resources\Styles\AppStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LoadingView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -73,6 +89,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\TestLoadingView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\WeatherView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

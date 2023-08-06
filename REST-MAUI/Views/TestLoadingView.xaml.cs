@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace REST_MAUI.Views;
 
 public partial class TestLoadingView : ContentPage
@@ -27,6 +29,7 @@ public partial class TestLoadingView : ContentPage
 		catch (Exception ex)
 		{
 			// Manejar errores si es necesario
+			Debug.WriteLine(ex);
 
 		}
 	}

@@ -4,11 +4,12 @@ namespace REST_MAUI;
 
 public partial class App : Application
 {
-	public App(MainView MainView)
+	public App()
 	{
 		InitializeComponent();
 
 		//MainPage = MainView; TestLoadingView
-		MainPage = new TestLoadingView(); 
+		//MainPage = new TestLoadingView();
+		MainPage = new WeatherView();
 	}
 }
